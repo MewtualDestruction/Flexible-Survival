@@ -493,7 +493,6 @@ to say gsopt_start:
 [Silent starting protocol that launches restore game. Included as part of restore on the main menu because of issues with the graphical window creation.]
 to say silent_start:
 	say "Please wait while we complete some background work prior to restoring.";
-	WaitLineBreak;
 	now started is 1;
 	gs_stats;
 	now Morale of Player is Charisma of Player plus Perception of Player;
